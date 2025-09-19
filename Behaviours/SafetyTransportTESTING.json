@@ -1,0 +1,384 @@
+{
+	"additionalNodes": [ {
+		"children": [],
+		"id": "biAXvizAqzuSa5eFpGWKlCJFmjzwMgtQ",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "fleet",
+			"value": "{Transporter}"
+		}, {
+			"name": "targetUnitID",
+			"value": "Package"
+		}, {
+			"name": "load",
+			"value": "False"
+		}, {
+			"name": "scriptName",
+			"value": "nota_havel_hlaa.LoaderCommand"
+		} ],
+		"scriptName": "nota_havel_hlaa.LoaderCommand"
+	}, {
+		"children": [ {
+			"children": [],
+			"id": "CjXAi2FCtizrq0tGKfFjq7zru0YdjrLj",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "Transporter"
+			}, {
+				"name": "value",
+				"value": "unitPair[1]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "bEgqdD2xfOpY2CTHYORVPQQOghlSkwKG",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "Package"
+			}, {
+				"name": "value",
+				"value": "unitPair[2]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "neIrl9kWmZ3rBySebceYmJovqx0wF47r",
+		"nodeType": "sequence",
+		"parameters": []
+	}, {
+		"children": [],
+		"id": "ytHnJRn3QbYKQb6vwnaSnWFAZEHO7Kkq",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "selectedUnits",
+			"value": "{Transporter}"
+		}, {
+			"name": "pathArray",
+			"value": "TravelPath"
+		}, {
+			"name": "scriptName",
+			"value": "nota_havel_hlaa.FollowPathSimple"
+		} ],
+		"scriptName": "nota_havel_hlaa.FollowPathSimple"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 259
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "TransporterUnits"
+	}, {
+		"command": "BETS_UNIT",
+		"name": "PackageUnits"
+	}, {
+		"command": "BETS_POSITION",
+		"name": "destination"
+	} ],
+	"outputs": [],
+	"properties": {
+		"5e52Z1M0lsGKbSHyEP0zuPdc9TzcJi5A": {
+			"height": 97,
+			"title": "nota_havel_hlaa.FollowPath",
+			"width": 358,
+			"x": 788,
+			"y": 467
+		},
+		"7uy2JhVPNRwjasFwWXWLCQgQK86UpoQi": {
+			"height": 94,
+			"title": "store",
+			"width": 480,
+			"x": 750,
+			"y": -54
+		},
+		"9dwGD3EAlPkNyYNealcT6LULXCQcDtTr": {
+			"height": 94,
+			"title": "store",
+			"width": 633,
+			"x": 794,
+			"y": 372
+		},
+		"BQyvAsgLONKJRHLLCBm9hYKful1KlhKU": {
+			"height": 94,
+			"title": "store",
+			"width": 633,
+			"x": 790,
+			"y": 267
+		},
+		"CjXAi2FCtizrq0tGKfFjq7zru0YdjrLj": {
+			"height": 95,
+			"title": "store",
+			"width": 152,
+			"x": 733,
+			"y": -362
+		},
+		"DDRGCgzH8QLbOuFheM85xtDqdY20wuas": {
+			"height": 92,
+			"title": "nota_havel_hlaa.FollowPath",
+			"width": 241,
+			"x": 791,
+			"y": 52
+		},
+		"HmeVAIl3VxLXWkPNwWPxrA7ABCXQ623n": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 518,
+			"y": -42
+		},
+		"HtFYppDoWbmN8apEpjM8hfuOHVVlPKAI": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 799,
+			"y": 586
+		},
+		"QQCXvaRqjKj79j5tUTnx9Ah7rReerdSU": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 300,
+			"y": 33
+		},
+		"T60nA9PWJZS6Bi3sYxcHHVSNfj5z7JH1": {
+			"height": 92,
+			"title": "store",
+			"width": 187,
+			"x": 977,
+			"y": -262
+		},
+		"WZEfc7GFdNuhiAH1UPyJ2awdsBohnU3m": {
+			"height": 95,
+			"title": "store",
+			"width": 207,
+			"x": 968,
+			"y": -360
+		},
+		"YapXB2k8NHvztfz0S3pn0lwetVQ1JkIG": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 763,
+			"y": -150
+		},
+		"bEgqdD2xfOpY2CTHYORVPQQOghlSkwKG": {
+			"height": 92,
+			"title": "store",
+			"width": 164,
+			"x": 723,
+			"y": -273
+		},
+		"biAXvizAqzuSa5eFpGWKlCJFmjzwMgtQ": {
+			"height": 112,
+			"title": "nota_havel_hlaa.LoaderCommand",
+			"width": 281,
+			"x": 795,
+			"y": 666
+		},
+		"g6JINe1oGbd04Q9eT6CLj5TnOyCPuy0Z": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 509,
+			"y": 147
+		},
+		"neIrl9kWmZ3rBySebceYmJovqx0wF47r": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 537,
+			"y": -193
+		},
+		"qHs3uwN0d19Kk7XVCRdjRn1ZfTkvi77c": {
+			"height": 112,
+			"title": "nota_havel_hlaa.LoaderCommand",
+			"width": 281,
+			"x": 788,
+			"y": 150
+		},
+		"uV0guX93ngAAFRk4cZMvXqM1TEAMxwtu": {
+			"height": 57,
+			"title": "success",
+			"width": 132,
+			"x": 538,
+			"y": 804
+		},
+		"ytHnJRn3QbYKQb6vwnaSnWFAZEHO7Kkq": {
+			"height": 92,
+			"title": "nota_havel_hlaa.FollowPathSimple",
+			"width": 283,
+			"x": 1117,
+			"y": 73
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "WZEfc7GFdNuhiAH1UPyJ2awdsBohnU3m",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Transporter"
+				}, {
+					"name": "value",
+					"value": "TransporterUnits[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "T60nA9PWJZS6Bi3sYxcHHVSNfj5z7JH1",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Package"
+				}, {
+					"name": "value",
+					"value": "PackageUnits[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "YapXB2k8NHvztfz0S3pn0lwetVQ1JkIG",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "7uy2JhVPNRwjasFwWXWLCQgQK86UpoQi",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "TravelPath"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.FindSafePath(Transporter, Package)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "HmeVAIl3VxLXWkPNwWPxrA7ABCXQ623n",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "DDRGCgzH8QLbOuFheM85xtDqdY20wuas",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "selectedUnits",
+					"value": "{Transporter}"
+				}, {
+					"name": "pathArray",
+					"value": "TravelPath"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.FollowPath"
+				} ],
+				"scriptName": "nota_havel_hlaa.FollowPath"
+			}, {
+				"children": [],
+				"id": "qHs3uwN0d19Kk7XVCRdjRn1ZfTkvi77c",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "fleet",
+					"value": "{Transporter}"
+				}, {
+					"name": "targetUnitID",
+					"value": "Package"
+				}, {
+					"name": "load",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.LoaderCommand"
+				} ],
+				"scriptName": "nota_havel_hlaa.LoaderCommand"
+			}, {
+				"children": [],
+				"id": "BQyvAsgLONKJRHLLCBm9hYKful1KlhKU",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "BackHome"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.ReverseTable(TravelPath)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "9dwGD3EAlPkNyYNealcT6LULXCQcDtTr",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "BackHomeFULL"
+				}, {
+					"name": "value",
+					"value": "{unpack(BackHome), destination}"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "5e52Z1M0lsGKbSHyEP0zuPdc9TzcJi5A",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "selectedUnits",
+					"value": "{Transporter}"
+				}, {
+					"name": "pathArray",
+					"value": "BackHomeFULL"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.FollowPath"
+				} ],
+				"scriptName": "nota_havel_hlaa.FollowPath"
+			}, {
+				"children": [],
+				"id": "HtFYppDoWbmN8apEpjM8hfuOHVVlPKAI",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 2
+				} ]
+			} ],
+			"id": "g6JINe1oGbd04Q9eT6CLj5TnOyCPuy0Z",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "uV0guX93ngAAFRk4cZMvXqM1TEAMxwtu",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "QQCXvaRqjKj79j5tUTnx9Ah7rReerdSU",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

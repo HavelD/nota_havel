@@ -1,0 +1,521 @@
+{
+	"additionalNodes": [ {
+		"children": [ {
+			"children": [],
+			"id": "YSh1ceZhBLvpfyeLXa5mIUMP6isUIjgt",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "Transporter"
+			}, {
+				"name": "value",
+				"value": "unitPair[1]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "MLY77XVbB1JsPbV4li3LHfvDXSSYJMNh",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "Package"
+			}, {
+				"name": "value",
+				"value": "unitPair[2]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "QYPnBdsVUi5uFxvYAOsraMGZSLXHwpAp",
+		"nodeType": "sequence",
+		"parameters": []
+	}, {
+		"children": [],
+		"id": "OG3McbOPTmjAkiGn0Bbn9ZZQXhVGgTuK",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "selectedUnits",
+			"value": "{Transporter}"
+		}, {
+			"name": "pathArray",
+			"value": "TravelPath"
+		}, {
+			"name": "scriptName",
+			"value": "nota_havel_hlaa.FollowPathSimple"
+		} ],
+		"scriptName": "nota_havel_hlaa.FollowPathSimple"
+	}, {
+		"children": [],
+		"id": "PXpXJnwhA0SITIyFiCg8sPNTDTpZgS5y",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "fleet",
+			"value": "{Transporter}"
+		}, {
+			"name": "targetUnitID",
+			"value": "Package"
+		}, {
+			"name": "load",
+			"value": "False"
+		}, {
+			"name": "scriptName",
+			"value": "nota_havel_hlaa.LoaderCommand"
+		} ],
+		"scriptName": "nota_havel_hlaa.LoaderCommand"
+	}, {
+		"children": [],
+		"id": "nQfkEZAWLa5lZQfHnyGUrLHxlHO3vkYt",
+		"nodeType": "wait",
+		"parameters": [ {
+			"name": "time",
+			"value": 2
+		} ]
+	}, {
+		"children": [],
+		"id": "J83wprO4w3GQhyAHSIKz2hL4mCjLDwt7",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "WidgetDisplay"
+		}, {
+			"name": "value",
+			"value": "nota_havel_hlaa.widgetHelpHills(PeaksMap)"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
+		"id": "IXEvjHPFsQSsIdqGMHcGFDLyeAkrjNzC",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "BackHomeFULL"
+		}, {
+			"name": "value",
+			"value": "{unpack(BackHome), destination}"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	} ],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 259
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "TransporterUnits"
+	}, {
+		"command": "BETS_UNIT",
+		"name": "PackageUnits"
+	}, {
+		"command": "BETS_POSITION",
+		"name": "destination"
+	} ],
+	"outputs": [],
+	"properties": {
+		"1omQXhJnRwIEH88LSo5gyL4wUoJJ3rWM": {
+			"height": 94,
+			"title": "store",
+			"width": 633,
+			"x": 1740,
+			"y": 249
+		},
+		"3B6jOtPTjMMkwtqFuax1WaVGBXisK3pl": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 509,
+			"y": 147
+		},
+		"5ZpCJyPvkLJoK8JUAb0mkl6sIAPTK9rv": {
+			"height": 95,
+			"title": "store",
+			"width": 207,
+			"x": 968,
+			"y": -360
+		},
+		"Bq91QzEOiTydQT03CP2LrjX5sBt9ctxG": {
+			"height": 94,
+			"title": "store",
+			"width": 633,
+			"x": 790,
+			"y": 267
+		},
+		"CuASjwVv4Sh3YlSyl5g6jiA8iL3fwlC4": {
+			"height": 94,
+			"title": "store",
+			"width": 503,
+			"x": 1743,
+			"y": 52
+		},
+		"FyLEsTGJPKR3d2jFxdEsK8x6XnRAcIAP": {
+			"height": 61,
+			"title": "sequence",
+			"width": 144,
+			"x": 1595,
+			"y": -105
+		},
+		"GRmzLmqjeOaYTyCV6UkpLyraM23NZqMU": {
+			"height": 112,
+			"title": "nota_havel_hlaa.LoaderCommand",
+			"width": 281,
+			"x": 788,
+			"y": 150
+		},
+		"IXEvjHPFsQSsIdqGMHcGFDLyeAkrjNzC": {
+			"height": 94,
+			"title": "store",
+			"width": 633,
+			"x": 794,
+			"y": 372
+		},
+		"J83wprO4w3GQhyAHSIKz2hL4mCjLDwt7": {
+			"height": 95,
+			"title": "store",
+			"width": 367,
+			"x": 1818,
+			"y": -63
+		},
+		"MLY77XVbB1JsPbV4li3LHfvDXSSYJMNh": {
+			"height": 92,
+			"title": "store",
+			"width": 164,
+			"x": 723,
+			"y": -273
+		},
+		"OG3McbOPTmjAkiGn0Bbn9ZZQXhVGgTuK": {
+			"height": 92,
+			"title": "nota_havel_hlaa.FollowPathSimple",
+			"width": 283,
+			"x": 1104,
+			"y": 54
+		},
+		"PXpXJnwhA0SITIyFiCg8sPNTDTpZgS5y": {
+			"height": 112,
+			"title": "nota_havel_hlaa.LoaderCommand",
+			"width": 281,
+			"x": 804,
+			"y": 742
+		},
+		"QYPnBdsVUi5uFxvYAOsraMGZSLXHwpAp": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 537,
+			"y": -193
+		},
+		"QyYxt140e9Ev9kNOGgoFO6r8s2Vgl1bL": {
+			"height": 97,
+			"title": "nota_havel_hlaa.FollowPath",
+			"width": 358,
+			"x": 799,
+			"y": 469
+		},
+		"ROxukZ1GDW47pHm7bRZ5cNaZbSy0wDRs": {
+			"height": 92,
+			"title": "nota_havel_hlaa.FollowPath",
+			"width": 241,
+			"x": 791,
+			"y": 52
+		},
+		"VXItLCfancPFpAJM7AtRjDFOvYCYqO2C": {
+			"height": 95,
+			"title": "store",
+			"width": 398,
+			"x": 1824,
+			"y": -184
+		},
+		"YFmlKdUAt9wwJ9m8wR0NU92Cpdx556VC": {
+			"height": 97,
+			"title": "nota_havel_hlaa.FollowPath",
+			"width": 358,
+			"x": 793,
+			"y": 565
+		},
+		"YSh1ceZhBLvpfyeLXa5mIUMP6isUIjgt": {
+			"height": 95,
+			"title": "store",
+			"width": 152,
+			"x": 733,
+			"y": -362
+		},
+		"ZQzGyn2NqZNVgmmogZpSp5mAmywl5zeA": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1363,
+			"y": -30
+		},
+		"b8NFJc2uLUlEAFRizqaFzhlX2sscLcHO": {
+			"height": 92,
+			"title": "store",
+			"width": 187,
+			"x": 977,
+			"y": -262
+		},
+		"hdv72XSrvCZsJ7bb6la79lrhnsXib9Xa": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 1824,
+			"y": 344
+		},
+		"mvCHAX28vDkcGjrPAwDfM0HDT7lNXN20": {
+			"height": 94,
+			"title": "store",
+			"width": 503,
+			"x": 1736,
+			"y": 151
+		},
+		"nQfkEZAWLa5lZQfHnyGUrLHxlHO3vkYt": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 812,
+			"y": 664
+		},
+		"nzdz7L3xoxBtAtfYfLCeWxY7KWBSXHTf": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 300,
+			"y": 33
+		},
+		"r2YNo2sqrrCcEvwBWLgOLAhywkZyrJHF": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 808,
+			"y": 868
+		},
+		"wpv8FS32ewtelRkxE2hXqL449Fa7HSr8": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 763,
+			"y": -150
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "5ZpCJyPvkLJoK8JUAb0mkl6sIAPTK9rv",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Transporter"
+				}, {
+					"name": "value",
+					"value": "TransporterUnits[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "b8NFJc2uLUlEAFRizqaFzhlX2sscLcHO",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Package"
+				}, {
+					"name": "value",
+					"value": "PackageUnits[1]"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "wpv8FS32ewtelRkxE2hXqL449Fa7HSr8",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "VXItLCfancPFpAJM7AtRjDFOvYCYqO2C",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "PeaksMap"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.Peaks({hillHeightThreshold=50})"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "FyLEsTGJPKR3d2jFxdEsK8x6XnRAcIAP",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "CuASjwVv4Sh3YlSyl5g6jiA8iL3fwlC4",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "CalculatedSafePath"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.FindSafePath(Transporter, Package, PeaksMap)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "mvCHAX28vDkcGjrPAwDfM0HDT7lNXN20",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "TravelPath"
+				}, {
+					"name": "value",
+					"value": "CalculatedSafePath.path"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "1omQXhJnRwIEH88LSo5gyL4wUoJJ3rWM",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "WidgetData"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.widgetHelpPath(CalculatedSafePath)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "hdv72XSrvCZsJ7bb6la79lrhnsXib9Xa",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 5
+				} ]
+			} ],
+			"id": "ZQzGyn2NqZNVgmmogZpSp5mAmywl5zeA",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "ROxukZ1GDW47pHm7bRZ5cNaZbSy0wDRs",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "selectedUnits",
+					"value": "{Transporter}"
+				}, {
+					"name": "pathArray",
+					"value": "TravelPath"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.FollowPath"
+				} ],
+				"scriptName": "nota_havel_hlaa.FollowPath"
+			}, {
+				"children": [],
+				"id": "GRmzLmqjeOaYTyCV6UkpLyraM23NZqMU",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "fleet",
+					"value": "{Transporter}"
+				}, {
+					"name": "targetUnitID",
+					"value": "Package"
+				}, {
+					"name": "load",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.LoaderCommand"
+				} ],
+				"scriptName": "nota_havel_hlaa.LoaderCommand"
+			}, {
+				"children": [],
+				"id": "Bq91QzEOiTydQT03CP2LrjX5sBt9ctxG",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "BackHome"
+				}, {
+					"name": "value",
+					"value": "nota_havel_hlaa.ReverseTable(TravelPath)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "QyYxt140e9Ev9kNOGgoFO6r8s2Vgl1bL",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "selectedUnits",
+					"value": "{Transporter}"
+				}, {
+					"name": "pathArray",
+					"value": "BackHome"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.FollowPath"
+				} ],
+				"scriptName": "nota_havel_hlaa.FollowPath"
+			}, {
+				"children": [],
+				"id": "YFmlKdUAt9wwJ9m8wR0NU92Cpdx556VC",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "selectedUnits",
+					"value": "{Transporter}"
+				}, {
+					"name": "pathArray",
+					"value": "{destination}"
+				}, {
+					"name": "scriptName",
+					"value": "nota_havel_hlaa.FollowPath"
+				} ],
+				"scriptName": "nota_havel_hlaa.FollowPath"
+			} ],
+			"id": "3B6jOtPTjMMkwtqFuax1WaVGBXisK3pl",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "r2YNo2sqrrCcEvwBWLgOLAhywkZyrJHF",
+			"nodeType": "success",
+			"parameters": []
+		} ],
+		"id": "nzdz7L3xoxBtAtfYfLCeWxY7KWBSXHTf",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
