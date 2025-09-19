@@ -35,7 +35,7 @@ return function()
         local azimuth = math.atan2(dirZ, dirX)
 
 		if (Script.LuaUI('wind_direction_debug')) then
-			Spring.Echo("Sending wind direction data to widget")
+			-- Spring.Echo("Sending wind direction data to widget")
 			Script.LuaUI.wind_direction_debug(
 				unitID, -- key
 				{	-- data

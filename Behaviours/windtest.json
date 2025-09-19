@@ -1,0 +1,74 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"8QXn26QgdLc0Ili50sGZlnLqyqDegRMU": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 498,
+			"y": 55
+		},
+		"P6qOwgjo1r0Pj4prZDI5E4wlOAkQXe0c": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 269,
+			"y": -60
+		},
+		"TsNWEGGt76HU4AsCgpF9jzzQUsOo7QUB": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 490,
+			"y": -60
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "TsNWEGGt76HU4AsCgpF9jzzQUsOo7QUB",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "wind"
+			}, {
+				"name": "value",
+				"value": "map.Wind()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "8QXn26QgdLc0Ili50sGZlnLqyqDegRMU",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "game"
+			}, {
+				"name": "value",
+				"value": "Game"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "P6qOwgjo1r0Pj4prZDI5E4wlOAkQXe0c",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

@@ -12,9 +12,9 @@
 		"2PdiajRMkt2DnQ4zRjADlriuNbsPiht7": {
 			"height": 112,
 			"title": "formation.move",
-			"width": 356,
-			"x": 1229,
-			"y": 178
+			"width": 463,
+			"x": 1079,
+			"y": 184
 		},
 		"7Cb1d9BO60M9Nv8ykBpdZWpiq1Rb8EUc": {
 			"height": 94,
@@ -23,19 +23,12 @@
 			"x": 1954,
 			"y": 89
 		},
-		"7j0H3UAi2r6KGv3aiA32hKZ4p2GiZ4us": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 693,
-			"y": 253
-		},
 		"AB6V9cPbgtracJ7LAOKxr1MpNnjp3ONL": {
 			"height": 112,
 			"title": "formation.move",
-			"width": 356,
-			"x": 1227,
-			"y": 292
+			"width": 468,
+			"x": 1079,
+			"y": 295
 		},
 		"Bd2pVDLUkE4WvN2Ev4JUwFKe3EAoqDre": {
 			"height": 94,
@@ -82,7 +75,7 @@
 		"V6qSMboCniSUQoyppywiCi0f1UO8ypkd": {
 			"height": 92,
 			"title": "store",
-			"width": 131,
+			"width": 162,
 			"x": 1079,
 			"y": 58
 		},
@@ -132,8 +125,8 @@
 			"height": 91,
 			"title": "luaCondition",
 			"width": 303,
-			"x": 867,
-			"y": 242
+			"x": 702,
+			"y": 228
 		},
 		"uRSgVNbBg8UaNRVhWTnbGT5JQyYl4HL3": {
 			"height": 70,
@@ -170,7 +163,7 @@
 							"value": "windInfo"
 						}, {
 							"name": "value",
-							"value": "nota_havel.CommanderWindArrow()"
+							"value": "CommanderWindArrow()"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -200,7 +193,7 @@
 							"value": "repeater"
 						}, {
 							"name": "value",
-							"value": "true"
+							"value": "not repeater"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -216,62 +209,57 @@
 				"parameters": []
 			}, {
 				"children": [ {
-					"children": [ {
-						"children": [],
-						"id": "2PdiajRMkt2DnQ4zRjADlriuNbsPiht7",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "position",
-							"value": "windInfo.unitPos + commanderMove"
-						}, {
-							"name": "formation",
-							"value": "formation.Definition(\"wedge\").positions"
-						}, {
-							"name": "fight",
-							"value": "false"
-						}, {
-							"name": "scriptName",
-							"value": "formation.move"
-						} ],
-						"scriptName": "formation.move"
-					}, {
-						"children": [],
-						"id": "AB6V9cPbgtracJ7LAOKxr1MpNnjp3ONL",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "position",
-							"value": "windInfo.unitPos + commanderMove"
-						}, {
-							"name": "formation",
-							"value": "formation.Definition(\"wedge\").positions"
-						}, {
-							"name": "fight",
-							"value": "false"
-						}, {
-							"name": "scriptName",
-							"value": "formation.move"
-						} ],
-						"scriptName": "formation.move"
-					} ],
-					"id": "qWG9e65bR07p8iSfqvoVyiT0E47kePXB",
-					"nodeType": "luaCondition",
+					"children": [],
+					"id": "2PdiajRMkt2DnQ4zRjADlriuNbsPiht7",
+					"nodeType": "luaCommand",
 					"parameters": [ {
-						"name": "expression",
-						"value": "((repeater == nil) or repeater == false )"
+						"name": "position",
+						"value": "windInfo.unitPos + commanderMove"
 					}, {
-						"name": "repeat",
+						"name": "formation",
+						"value": "formation.Definition(\"wedge\").positions"
+					}, {
+						"name": "fight",
 						"value": "false"
-					} ]
+					}, {
+						"name": "scriptName",
+						"value": "formation.move"
+					} ],
+					"scriptName": "formation.move"
+				}, {
+					"children": [],
+					"id": "AB6V9cPbgtracJ7LAOKxr1MpNnjp3ONL",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "position",
+						"value": "windInfo.unitPos + commanderMove"
+					}, {
+						"name": "formation",
+						"value": "formation.Definition(\"wedge\").positions"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "formation.move"
+					} ],
+					"scriptName": "formation.move"
 				} ],
-				"id": "7j0H3UAi2r6KGv3aiA32hKZ4p2GiZ4us",
-				"nodeType": "repeat",
-				"parameters": []
+				"id": "qWG9e65bR07p8iSfqvoVyiT0E47kePXB",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "((repeater == nil) or repeater == false )"
+				}, {
+					"name": "repeat",
+					"value": "true"
+				} ]
 			} ],
 			"id": "uRSgVNbBg8UaNRVhWTnbGT5JQyYl4HL3",
 			"nodeType": "parallel",
 			"parameters": [ {
 				"name": "mode",
-				"value": "all-success"
+				"value": "any-result"
 			} ]
 		}, {
 			"children": [ {
@@ -300,7 +288,7 @@
 							"value": "formDef"
 						}, {
 							"name": "value",
-							"value": "nota_havel.havelFormationDefinition(\"line\")"
+							"value": "havelFormationDefinition(\"line\")"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -374,7 +362,7 @@
 					"value": "(repeater == nil) or repeater == false "
 				}, {
 					"name": "repeat",
-					"value": "false"
+					"value": "true"
 				} ]
 			} ],
 			"id": "hMUFJNqEaIhf9XCYnRwi6psAeb4ycLGl",
