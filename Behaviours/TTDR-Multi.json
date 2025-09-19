@@ -86,7 +86,7 @@
 		},
 		"8FDay5Rm0t42175O2ItK5O5dzd4LEkPr": {
 			"height": 92,
-			"title": "nota_havel_hlaa.FollowPath",
+			"title": "nota_havel.FollowPath",
 			"width": 241,
 			"x": 1166,
 			"y": 751
@@ -317,7 +317,7 @@
 		}
 	},
 	"roles": [ {
-		"categories": [ "nota_havel_hlaa.AirVision" ],
+		"categories": [ "nota_havel.AirVision" ],
 		"name": "Role 0"
 	}, {
 		"categories": [],
@@ -399,7 +399,7 @@
 					"value": "GroundUnits"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.nota_havel_hlaa.ttdr_groundUnits})"
+					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.nota_havel.ttdr_groundUnits})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -414,7 +414,7 @@
 					"value": "Towers"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.ListClosestUnitsByCategory({units=AllUnits, maxUnits=13, center=goalArea.center, category=Categories.nota_havel_hlaa.towers})"
+					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=13, center=goalArea.center, category=Categories.nota_havel.towers})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -429,7 +429,7 @@
 					"value": "Transporters"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.Common.transports})"
+					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.Common.transports})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -461,7 +461,7 @@
 				"nodeType": "reference",
 				"parameters": [ {
 					"name": "behaviourName",
-					"value": "nota_havel_hlaa.SearchArea"
+					"value": "nota_havel.SearchArea"
 				} ],
 				"referenceInputs": [],
 				"referenceOutputs": []
@@ -515,7 +515,7 @@
 											"nodeType": "reference",
 											"parameters": [ {
 												"name": "behaviourName",
-												"value": "nota_havel_hlaa.SafelyTransport"
+												"value": "nota_havel.SafelyTransport"
 											} ],
 											"referenceInputs": [ {
 												"name": "TransporterUnits",
@@ -550,7 +550,7 @@
 											"nodeType": "reference",
 											"parameters": [ {
 												"name": "behaviourName",
-												"value": "nota_havel_hlaa.SafelyTransport"
+												"value": "nota_havel.SafelyTransport"
 											} ],
 											"referenceInputs": [ {
 												"name": "TransporterUnits",
@@ -585,7 +585,7 @@
 											"nodeType": "reference",
 											"parameters": [ {
 												"name": "behaviourName",
-												"value": "nota_havel_hlaa.SafelyTransport"
+												"value": "nota_havel.SafelyTransport"
 											} ],
 											"referenceInputs": [ {
 												"name": "TransporterUnits",
@@ -620,7 +620,7 @@
 											"nodeType": "reference",
 											"parameters": [ {
 												"name": "behaviourName",
-												"value": "nota_havel_hlaa.SafelyTransport"
+												"value": "nota_havel.SafelyTransport"
 											} ],
 											"referenceInputs": [ {
 												"name": "TransporterUnits",
@@ -655,7 +655,7 @@
 											"nodeType": "reference",
 											"parameters": [ {
 												"name": "behaviourName",
-												"value": "nota_havel_hlaa.SafelyTransport"
+												"value": "nota_havel.SafelyTransport"
 											} ],
 											"referenceInputs": [ {
 												"name": "TransporterUnits",
@@ -715,9 +715,9 @@
 							"value": "{goalArea.center}"
 						}, {
 							"name": "scriptName",
-							"value": "nota_havel_hlaa.FollowPath"
+							"value": "nota_havel.FollowPath"
 						} ],
-						"scriptName": "nota_havel_hlaa.FollowPath"
+						"scriptName": "nota_havel.FollowPath"
 					} ],
 					"id": "ve6CBOKkFhnect6m6XHy3JwblpcwNGb3",
 					"nodeType": "parallel",

@@ -88,7 +88,7 @@
 		}
 	},
 	"roles": [ {
-		"categories": [ "nota_havel_hlaa.commander" ],
+		"categories": [ "nota_havel.commander" ],
 		"name": "Role 0"
 	}, {
 		"categories": [],
@@ -135,7 +135,7 @@
 					"value": "PeaksList"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.Peaks({hillHeightThreshold = 130, checkGranularity=64, removeClosest=Enemies})"
+					"value": "nota_havel.Peaks({hillHeightThreshold = 130, checkGranularity=64, removeClosest=Enemies})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -150,7 +150,7 @@
 					"value": "TerrainWidget"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.widgetHelpHills(PeaksList)"
+					"value": "nota_havel.widgetHelpHills(PeaksList)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -185,7 +185,7 @@
 					"value": "formationPos"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.AbsolutePointsToFormation(PeaksList.peaks, true)"
+					"value": "nota_havel.AbsolutePointsToFormation(PeaksList.peaks, true)"
 				}, {
 					"name": "scriptName",
 					"value": "store"

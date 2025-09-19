@@ -30,7 +30,7 @@ return function()
 		local unitID = units[1]
 		local x,y,z = Spring.GetUnitPosition(unitID)
         
-        --  TODO Change to get this info from custom wind sensor (nota_havel_hlaa/Sensors/Wind.lua)
+        --  TODO Change to get this info from custom wind sensor (nota_havel/Sensors/Wind.lua)
         local dirX, dirY, dirZ, strength, normDirX, normDirY, normDirZ = SpringGetWind()
         local azimuth = math.atan2(dirZ, dirX)
 

@@ -46,9 +46,9 @@
 			"value": "TravelPath"
 		}, {
 			"name": "scriptName",
-			"value": "nota_havel_hlaa.FollowPathSimple"
+			"value": "nota_havel.FollowPathSimple"
 		} ],
-		"scriptName": "nota_havel_hlaa.FollowPathSimple"
+		"scriptName": "nota_havel.FollowPathSimple"
 	}, {
 		"children": [],
 		"id": "PXpXJnwhA0SITIyFiCg8sPNTDTpZgS5y",
@@ -64,9 +64,9 @@
 			"value": "False"
 		}, {
 			"name": "scriptName",
-			"value": "nota_havel_hlaa.LoaderCommand"
+			"value": "nota_havel.LoaderCommand"
 		} ],
-		"scriptName": "nota_havel_hlaa.LoaderCommand"
+		"scriptName": "nota_havel.LoaderCommand"
 	}, {
 		"children": [],
 		"id": "nQfkEZAWLa5lZQfHnyGUrLHxlHO3vkYt",
@@ -84,7 +84,7 @@
 			"value": "WidgetDisplay"
 		}, {
 			"name": "value",
-			"value": "nota_havel_hlaa.widgetHelpHills(PeaksMap)"
+			"value": "nota_havel.widgetHelpHills(PeaksMap)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -168,7 +168,7 @@
 		},
 		"GRmzLmqjeOaYTyCV6UkpLyraM23NZqMU": {
 			"height": 112,
-			"title": "nota_havel_hlaa.LoaderCommand",
+			"title": "nota_havel.LoaderCommand",
 			"width": 281,
 			"x": 788,
 			"y": 150
@@ -196,14 +196,14 @@
 		},
 		"OG3McbOPTmjAkiGn0Bbn9ZZQXhVGgTuK": {
 			"height": 92,
-			"title": "nota_havel_hlaa.FollowPathSimple",
+			"title": "nota_havel.FollowPathSimple",
 			"width": 283,
 			"x": 1104,
 			"y": 54
 		},
 		"PXpXJnwhA0SITIyFiCg8sPNTDTpZgS5y": {
 			"height": 112,
-			"title": "nota_havel_hlaa.LoaderCommand",
+			"title": "nota_havel.LoaderCommand",
 			"width": 281,
 			"x": 804,
 			"y": 742
@@ -217,14 +217,14 @@
 		},
 		"QyYxt140e9Ev9kNOGgoFO6r8s2Vgl1bL": {
 			"height": 97,
-			"title": "nota_havel_hlaa.FollowPath",
+			"title": "nota_havel.FollowPath",
 			"width": 358,
 			"x": 799,
 			"y": 469
 		},
 		"ROxukZ1GDW47pHm7bRZ5cNaZbSy0wDRs": {
 			"height": 92,
-			"title": "nota_havel_hlaa.FollowPath",
+			"title": "nota_havel.FollowPath",
 			"width": 241,
 			"x": 791,
 			"y": 52
@@ -238,7 +238,7 @@
 		},
 		"YFmlKdUAt9wwJ9m8wR0NU92Cpdx556VC": {
 			"height": 97,
-			"title": "nota_havel_hlaa.FollowPath",
+			"title": "nota_havel.FollowPath",
 			"width": 358,
 			"x": 793,
 			"y": 565
@@ -357,7 +357,7 @@
 					"value": "PeaksMap"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.Peaks({hillHeightThreshold=50})"
+					"value": "nota_havel.Peaks({hillHeightThreshold=50})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -377,7 +377,7 @@
 					"value": "CalculatedSafePath"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.FindSafePath(Transporter, Package, PeaksMap)"
+					"value": "nota_havel.FindSafePath(Transporter, Package, PeaksMap)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -407,7 +407,7 @@
 					"value": "WidgetData"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.widgetHelpPath(CalculatedSafePath)"
+					"value": "nota_havel.widgetHelpPath(CalculatedSafePath)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -438,9 +438,9 @@
 					"value": "TravelPath"
 				}, {
 					"name": "scriptName",
-					"value": "nota_havel_hlaa.FollowPath"
+					"value": "nota_havel.FollowPath"
 				} ],
-				"scriptName": "nota_havel_hlaa.FollowPath"
+				"scriptName": "nota_havel.FollowPath"
 			}, {
 				"children": [],
 				"id": "GRmzLmqjeOaYTyCV6UkpLyraM23NZqMU",
@@ -456,9 +456,9 @@
 					"value": "true"
 				}, {
 					"name": "scriptName",
-					"value": "nota_havel_hlaa.LoaderCommand"
+					"value": "nota_havel.LoaderCommand"
 				} ],
-				"scriptName": "nota_havel_hlaa.LoaderCommand"
+				"scriptName": "nota_havel.LoaderCommand"
 			}, {
 				"children": [],
 				"id": "Bq91QzEOiTydQT03CP2LrjX5sBt9ctxG",
@@ -468,7 +468,7 @@
 					"value": "BackHome"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.ReverseTable(TravelPath)"
+					"value": "nota_havel.ReverseTable(TravelPath)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -486,9 +486,9 @@
 					"value": "BackHome"
 				}, {
 					"name": "scriptName",
-					"value": "nota_havel_hlaa.FollowPath"
+					"value": "nota_havel.FollowPath"
 				} ],
-				"scriptName": "nota_havel_hlaa.FollowPath"
+				"scriptName": "nota_havel.FollowPath"
 			}, {
 				"children": [],
 				"id": "YFmlKdUAt9wwJ9m8wR0NU92Cpdx556VC",
@@ -501,9 +501,9 @@
 					"value": "{destination}"
 				}, {
 					"name": "scriptName",
-					"value": "nota_havel_hlaa.FollowPath"
+					"value": "nota_havel.FollowPath"
 				} ],
-				"scriptName": "nota_havel_hlaa.FollowPath"
+				"scriptName": "nota_havel.FollowPath"
 			} ],
 			"id": "3B6jOtPTjMMkwtqFuax1WaVGBXisK3pl",
 			"nodeType": "sequence",

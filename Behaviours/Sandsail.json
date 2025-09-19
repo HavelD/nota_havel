@@ -151,7 +151,7 @@
 		}
 	},
 	"roles": [ {
-		"categories": [ "nota_havel_hlaa.commander" ],
+		"categories": [ "nota_havel.commander" ],
 		"name": "Role 0"
 	}, {
 		"categories": [],
@@ -170,7 +170,7 @@
 							"value": "windInfo"
 						}, {
 							"name": "value",
-							"value": "nota_havel_hlaa.CommanderWindArrow()"
+							"value": "nota_havel.CommanderWindArrow()"
 						}, {
 							"name": "scriptName",
 							"value": "store"
@@ -300,7 +300,7 @@
 							"value": "formDef"
 						}, {
 							"name": "value",
-							"value": "nota_havel_hlaa.havelFormationDefinition(\"line\")"
+							"value": "nota_havel.havelFormationDefinition(\"line\")"
 						}, {
 							"name": "scriptName",
 							"value": "store"

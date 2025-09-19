@@ -24,7 +24,7 @@
 				"value": "AirVision"
 			}, {
 				"name": "value",
-				"value": "nota_havel_hlaa.ListClosestUnitsByCategory({units=AllUnits})"
+				"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits})"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -39,7 +39,7 @@
 				"value": "SearchArea"
 			}, {
 				"name": "value",
-				"value": "nota_havel_hlaa.CircleFormation({area=AreaDef})"
+				"value": "nota_havel.CircleFormation({area=AreaDef})"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -177,7 +177,7 @@
 					"value": "SearchFormation"
 				}, {
 					"name": "value",
-					"value": "nota_havel_hlaa.havelFormationDefinition(\"line\")"
+					"value": "nota_havel.havelFormationDefinition(\"line\")"
 				}, {
 					"name": "scriptName",
 					"value": "store"
