@@ -16,7 +16,27 @@ end
 
 -- speedups
 local SpringGetWind = Spring.GetWind
-local getHeight = Spring.GetGroundHeight
+-- local getHeight = Spring.GetGroundHeight
+
+function getHeight(x, z)
+    local r = 25
+    -- local heightSum = 0
+    -- local count = 0
+    local maxH = -math.huge
+    for _, dX in ipairs({-r, 0, r}) do
+        for _, dZ in ipairs({-r, 0, r}) do
+            local h = Spring.GetGroundHeight(x + dX, z + dZ)
+            -- heightSum = heightSum + h
+            -- count = count + 1
+            if h > maxH then
+                maxH = h
+            end
+        end
+    end
+
+    -- local average = heightSum / count
+    return maxH
+end
 
 local mapWidth = Game.mapSizeX
 local mapHeight = Game.mapSizeZ
