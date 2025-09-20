@@ -62,11 +62,11 @@ function Run(self, units, parameter)
 		targetUnitIDs = {targetUnitID}
 	end
 
-	if (fleet and #fleet > 0) then
-		Spring.Echo("LoaderCommand: Using specified fleet of size " .. #fleet)
-	else
-		Spring.Echo("LoaderCommand: No fleet specified, using all selected units")
-	end
+	-- if (fleet and #fleet > 0) then
+		-- Spring.Echo("LoaderCommand: Using specified fleet of size " .. #fleet)
+	-- else
+		-- Spring.Echo("LoaderCommand: No fleet specified, using all selected units")
+	-- end
 
 	local loaderUnits = (fleet and #fleet > 0) and fleet or units
 	local loaderUnits = Sensors.FilterUnitsByCategory(loaderUnits, Categories.Common.transports)
@@ -96,18 +96,18 @@ function Run(self, units, parameter)
 		
 		tX, tY, tZ = SpringGetUnitPosition(targetID)
 
-		Spring.Echo("LoaderCommand: Commanding loader unit " .. loaderID .. " to " .. (load and "load" or "unload") .. " target unit " .. targetID)
+		-- Spring.Echo("LoaderCommand: Commanding loader unit " .. loaderID .. " to " .. (load and "load" or "unload") .. " target unit " .. targetID)
 		-- give appropriate command
 		-- Spring.Echo("Unit Transporter LOADER:", Spring.GetUnitTransporter(loaderID))
 		-- Spring.Echo("Is Transporting LOADER:", Spring.GetUnitIsTransporting(loaderID))
-		Spring.Echo("Unit Transporter TARGET:", Spring.GetUnitTransporter(targetID))
+		-- Spring.Echo("Unit Transporter TARGET:", Spring.GetUnitTransporter(targetID))
 		-- Spring.Echo("Is Transporting TARGET:", Spring.GetUnitIsTransporting(targetID))
 		if load then
 			if Spring.GetUnitTransporter(targetID) == loaderID then
-				Spring.Echo("LoaderCommand: Target unit " .. targetID .. " is already loaded, skipping.")
+				-- Spring.Echo("LoaderCommand: Target unit " .. targetID .. " is already loaded, skipping.")
 			elseif self.ordersGiven[loaderID] ~= targetID then
 				SpringGiveOrderToUnit(loaderID, CMD.LOAD_UNITS, {tX, tY, tZ, 50}, {"shift"}) -- alt to prevent shift-load ???
-				Spring.Echo("LoaderCommand: Loader unit " .. loaderID .. " ordered to load target unit " .. targetID)
+				-- Spring.Echo("LoaderCommand: Loader unit " .. loaderID .. " ordered to load target unit " .. targetID)
 				self.ordersGiven[loaderID] = targetID
 			end
 			

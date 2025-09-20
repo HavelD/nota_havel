@@ -25,13 +25,13 @@ end
 return function(pathData)
     local unitID = units[1]
     if (Script.LuaUI('path_show')) then
-        Spring.Echo("Sending path data to widget")
+        -- Spring.Echo("Sending path data to widget")
         Script.LuaUI.path_show(
             unitID, -- key
             { pathData = pathData } -- data
         )
     else
-        Spring.Echo("Path debug widget not found")
+        -- Spring.Echo("Path debug widget not found")
     end
     
     return  { pathData = pathData }

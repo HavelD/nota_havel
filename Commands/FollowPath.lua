@@ -38,6 +38,7 @@ local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 local SpringCategory = Spring.GetUnitDefID
 local airUnits = Categories.Common.airUnits
 local isDead = Spring.GetUnitIsDead
+local validID = Spring.ValidUnitID
 
 local getHeight = Spring.GetGroundHeight
 
@@ -95,7 +96,7 @@ function Run(self, units, parameter)
 
 	for u = 1, #selectedUnits do
 		local unitID = selectedUnits[u]
-		if not isDead(unitID) then -- skip dead units
+		if not isDead(unitID) and validID(unitID) then -- skip dead units
 
 			-- Height and Threshold correction for Flying units
 			local heightCorrection = 0

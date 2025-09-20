@@ -84,7 +84,7 @@
 			"value": "WidgetDisplay"
 		}, {
 			"name": "value",
-			"value": "nota_havel.widgetHelpHills(PeaksMap)"
+			"value": "widgetHelpHills(PeaksMap)"
 		}, {
 			"name": "scriptName",
 			"value": "store"
@@ -357,7 +357,7 @@
 					"value": "PeaksMap"
 				}, {
 					"name": "value",
-					"value": "nota_havel.Peaks({hillHeightThreshold=50})"
+					"value": "Peaks({hillHeightThreshold=50})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -377,7 +377,7 @@
 					"value": "CalculatedSafePath"
 				}, {
 					"name": "value",
-					"value": "nota_havel.FindSafePath(Transporter, Package, PeaksMap)"
+					"value": "FindSafePath(Transporter, Package, PeaksMap)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -407,7 +407,7 @@
 					"value": "WidgetData"
 				}, {
 					"name": "value",
-					"value": "nota_havel.widgetHelpPath(CalculatedSafePath)"
+					"value": "widgetHelpPath(CalculatedSafePath)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -468,7 +468,7 @@
 					"value": "BackHome"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ReverseTable(TravelPath)"
+					"value": "ReverseTable(TravelPath)"
 				}, {
 					"name": "scriptName",
 					"value": "store"

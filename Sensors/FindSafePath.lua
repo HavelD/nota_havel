@@ -227,7 +227,7 @@ return function(startPosition, endPosition, safegrid)
         local x,y,z = SpringGetUnitPosition(startpos)
         startpos = Vec3(x,y,z)
     elseif type(startpos) ~= "table" then
-        Spring.Echo("FindSafePath: Invalid start position type:", type(startpos))
+        Logger.warn("FindSafePath", "Invalid start position type:", type(startpos))
         return {}
     end
 
@@ -235,7 +235,7 @@ return function(startPosition, endPosition, safegrid)
         local x,y,z = SpringGetUnitPosition(endpos)
         endpos = Vec3(x,y,z)
     elseif type(endpos) ~= "table" then
-        Spring.Echo("FindSafePath: Invalid end position type:", type(endpos))   
+        Logger.warn("FindSafePath", "Invalid end position type:", type(endpos))
         return {}
     end
 
@@ -277,11 +277,11 @@ return function(startPosition, endPosition, safegrid)
     -->> If start or end position is not in safe area, find closest safe point
     if not binaryGrid[startGridPos[1]][startGridPos[2]] then
         startGridPos = findClosestSafePoint(startGridPos, binaryGrid)
-        Spring.Echo(string.format("FindSafePath: Found safe start position at grid [%d, %d]", startGridPos[1], startGridPos[2]))
+        -- Spring.Echo(string.format("FindSafePath: Found safe start position at grid [%d, %d]", startGridPos[1], startGridPos[2]))
     end
     if not binaryGrid[endGridPos[1]][endGridPos[2]] then
         endGridPos = findClosestSafePoint(endGridPos, binaryGrid)
-        Spring.Echo(string.format("FindSafePath: Found safe end position at grid [%d, %d]", endGridPos[1], endGridPos[2]))
+        -- Spring.Echo(string.format("FindSafePath: Found safe end position at grid [%d, %d]", endGridPos[1], endGridPos[2]))
     end
     --<<
 

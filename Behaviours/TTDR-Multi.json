@@ -1,21 +1,6 @@
 {
 	"additionalNodes": [ {
 		"children": [],
-		"id": "o1hVx19PNTYdRQvSCCS4TU9BOFJ2QUWN",
-		"nodeType": "luaCommand",
-		"parameters": [ {
-			"name": "var",
-			"value": "Transporters"
-		}, {
-			"name": "value",
-			"value": "core.FilterUnitsByCategory(Spring.GetAllUnits(), {Categories.Common.transports})"
-		}, {
-			"name": "scriptName",
-			"value": "store"
-		} ],
-		"scriptName": "store"
-	}, {
-		"children": [],
 		"id": "yfI0E6jeHEcm0APQaWssQ3o3OkAky7u6",
 		"nodeType": "luaCondition",
 		"parameters": [ {
@@ -108,7 +93,7 @@
 		"CvzxHYEnHeH3cbBPgkcAoFJslBhJPFF6": {
 			"height": 94,
 			"title": "store",
-			"width": 198,
+			"width": 206,
 			"x": 832,
 			"y": -267
 		},
@@ -245,13 +230,6 @@
 			"x": 2924,
 			"y": 705
 		},
-		"o1hVx19PNTYdRQvSCCS4TU9BOFJ2QUWN": {
-			"height": 100,
-			"title": "store",
-			"width": 607,
-			"x": 1062,
-			"y": 261
-		},
 		"oDVgg4nbcw3tcq4WOJ7CdzsjJ9h4EYuJ": {
 			"height": 54,
 			"title": "success",
@@ -291,8 +269,8 @@
 			"height": 88,
 			"title": "luaCondition",
 			"width": 353,
-			"x": 1140,
-			"y": 403
+			"x": 1143,
+			"y": 377
 		},
 		"yp4JomiapaWtSBbTV3bsCHENbDDoQRCY": {
 			"height": 72,
@@ -399,7 +377,7 @@
 					"value": "GroundUnits"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.nota_havel.ttdr_groundUnits})"
+					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.ttdr_groundUnits})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -414,7 +392,7 @@
 					"value": "Towers"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=13, center=goalArea.center, category=Categories.nota_havel.towers})"
+					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=13, center=goalArea.center, category=Categories.towers})"
 				}, {
 					"name": "scriptName",
 					"value": "store"

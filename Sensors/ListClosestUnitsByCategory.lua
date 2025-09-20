@@ -62,8 +62,8 @@ return function(params)
 			filteredUnits[#filteredUnits + 1] = unit
 		end
     end
-    Spring.Echo("Number of selected units", #allUnits)
-    Spring.Echo("Number of filtered units", #filteredUnits)
+    -- Spring.Echo("Number of selected units", #allUnits)
+    -- Spring.Echo("Number of filtered units", #filteredUnits)
 
     
     table.sort(filteredUnits,
