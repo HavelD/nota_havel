@@ -39,6 +39,21 @@
 		"scriptName": "store"
 	}, {
 		"children": [],
+		"id": "NvfSmptWdGan844xJ6ixFhiE34BRjDg8",
+		"nodeType": "luaCommand",
+		"parameters": [ {
+			"name": "var",
+			"value": "Towers"
+		}, {
+			"name": "value",
+			"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.towers})"
+		}, {
+			"name": "scriptName",
+			"value": "store"
+		} ],
+		"scriptName": "store"
+	}, {
+		"children": [],
 		"id": "yfI0E6jeHEcm0APQaWssQ3o3OkAky7u6",
 		"nodeType": "luaCondition",
 		"parameters": [ {
@@ -69,8 +84,8 @@
 			"height": 99,
 			"title": "store",
 			"width": 198,
-			"x": 831,
-			"y": 258
+			"x": 1122,
+			"y": 285
 		},
 		"1GezpkS5asFYTeLLQlhHELV9igccu1Hy": {
 			"height": 97,
@@ -104,8 +119,8 @@
 			"height": 92,
 			"title": "nota_havel.FollowPath",
 			"width": 241,
-			"x": 1166,
-			"y": 751
+			"x": 877,
+			"y": 803
 		},
 		"8Fs4BscDlBIXbom56RD8yTHPlIiJvr3R": {
 			"height": 98,
@@ -118,15 +133,15 @@
 			"height": 94,
 			"title": "store",
 			"width": 1083,
-			"x": 832,
-			"y": 161
+			"x": 1119,
+			"y": 195
 		},
 		"A5QRctToWACfTM0nvvk4KS2jhmBE23Jh": {
 			"height": 94,
 			"title": "store",
 			"width": 1083,
-			"x": 1911,
-			"y": 66
+			"x": 2228,
+			"y": -34
 		},
 		"Amhny4tuTE3niXcOeQ8fqjNrd6bcnQ8y": {
 			"height": 54,
@@ -181,8 +196,15 @@
 			"height": 97,
 			"title": "store",
 			"width": 1084,
-			"x": 828,
-			"y": -37
+			"x": 1123,
+			"y": -187
+		},
+		"NvfSmptWdGan844xJ6ixFhiE34BRjDg8": {
+			"height": 99,
+			"title": "store",
+			"width": 797,
+			"x": 2234,
+			"y": 56
 		},
 		"ODOEyAEjfFjkRRFirOXiMSqjphm0byrU": {
 			"height": 214,
@@ -232,6 +254,13 @@
 			"width": 268,
 			"x": 783,
 			"y": 405
+		},
+		"Vz5AhLuRmE3ICdkneFI0USaqOabBaQWV": {
+			"height": 94,
+			"title": "store",
+			"width": 1083,
+			"x": 1121,
+			"y": 102
 		},
 		"W1SQ9mt93kvpEQM19FqCHCsvhRTsfvau": {
 			"height": 60,
@@ -283,11 +312,11 @@
 			"y": 501
 		},
 		"gVfhWD7JSytqlcfyaxLQBPq194tbD8K9": {
-			"height": 94,
+			"height": 99,
 			"title": "store",
-			"width": 1083,
-			"x": 834,
-			"y": 62
+			"width": 797,
+			"x": 1123,
+			"y": -90
 		},
 		"hzpJRLVjCzFtxJNObcdfwc9K4D8cfnze": {
 			"height": 60,
@@ -321,8 +350,8 @@
 			"height": 97,
 			"title": "store",
 			"width": 1084,
-			"x": 1910,
-			"y": -34
+			"x": 2240,
+			"y": -130
 		},
 		"ve6CBOKkFhnect6m6XHy3JwblpcwNGb3": {
 			"height": 70,
@@ -330,6 +359,13 @@
 			"width": 202,
 			"x": 906,
 			"y": 688
+		},
+		"vvgvqQfAPtQVW0q5C4i4ufXdAHj5I0ip": {
+			"height": 99,
+			"title": "store",
+			"width": 797,
+			"x": 1122,
+			"y": 5
 		},
 		"yK96d43mv1vB8d0Orov9fEKHOT7wXqXg": {
 			"height": 214,
@@ -349,8 +385,8 @@
 			"height": 88,
 			"title": "luaCondition",
 			"width": 353,
-			"x": 1143,
-			"y": 377
+			"x": 1145,
+			"y": 403
 		},
 		"yp4JomiapaWtSBbTV3bsCHENbDDoQRCY": {
 			"height": 72,
@@ -370,8 +406,8 @@
 			"height": 54,
 			"title": "Main Variable",
 			"width": 169,
-			"x": 586,
-			"y": 14
+			"x": 897,
+			"y": -24
 		}
 	},
 	"roles": [ {
@@ -457,7 +493,7 @@
 					"value": "GroundUnits"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.ttdr_groundUnits})"
+					"value": "ListClosestUnitsByCategory({units=AllUnits, maxUnits=11, center=goalArea.center, category=Categories.ttdr_groundUnits})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -469,10 +505,40 @@
 				"nodeType": "luaCommand",
 				"parameters": [ {
 					"name": "var",
+					"value": "Towers10"
+				}, {
+					"name": "value",
+					"value": "ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.BoD})"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "vvgvqQfAPtQVW0q5C4i4ufXdAHj5I0ip",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "Towers5"
+				}, {
+					"name": "value",
+					"value": "ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.Hatracks})"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "Vz5AhLuRmE3ICdkneFI0USaqOabBaQWV",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
 					"value": "Towers"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.towers})"
+					"value": "Concatenate(Towers10, Towers5)"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -487,7 +553,7 @@
 					"value": "Transporters"
 				}, {
 					"name": "value",
-					"value": "nota_havel.ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.Common.transports})"
+					"value": "ListClosestUnitsByCategory({units=AllUnits, center=goalArea.center, category=Categories.Common.transports})"
 				}, {
 					"name": "scriptName",
 					"value": "store"
@@ -545,7 +611,7 @@
 									"value": "QueueCreation"
 								}, {
 									"name": "value",
-									"value": "nota_havel.UnitQueue({Transporters, Towers})"
+									"value": "UnitQueue({Transporters, Towers})"
 								}, {
 									"name": "scriptName",
 									"value": "store"
@@ -563,7 +629,7 @@
 												"value": "PairA"
 											}, {
 												"name": "value",
-												"value": "nota_havel.UnitQueue(\"pop\")"
+												"value": "UnitQueue(\"pop\")"
 											}, {
 												"name": "scriptName",
 												"value": "store"
@@ -607,7 +673,7 @@
 												"value": "PairD"
 											}, {
 												"name": "value",
-												"value": "nota_havel.UnitQueue(\"pop\")"
+												"value": "UnitQueue(\"pop\")"
 											}, {
 												"name": "scriptName",
 												"value": "store"
@@ -651,7 +717,7 @@
 												"value": "PairB"
 											}, {
 												"name": "value",
-												"value": "nota_havel.UnitQueue(\"pop\")"
+												"value": "UnitQueue(\"pop\")"
 											}, {
 												"name": "scriptName",
 												"value": "store"
@@ -695,7 +761,7 @@
 												"value": "PairE"
 											}, {
 												"name": "value",
-												"value": "nota_havel.UnitQueue(\"pop\")"
+												"value": "UnitQueue(\"pop\")"
 											}, {
 												"name": "scriptName",
 												"value": "store"
@@ -739,7 +805,7 @@
 												"value": "PairC"
 											}, {
 												"name": "value",
-												"value": "nota_havel.UnitQueue(\"pop\")"
+												"value": "UnitQueue(\"pop\")"
 											}, {
 												"name": "scriptName",
 												"value": "store"
