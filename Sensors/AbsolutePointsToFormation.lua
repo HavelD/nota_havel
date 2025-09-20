@@ -72,9 +72,10 @@ return function(mapPoints, allowGroups, unitSelection)
     end
 
     if #selectedUnits > #formation then
-        Spring.Echo("PointsToFormation: Warning - more units than formation points", #formation, #selectedUnits)
-        if allowGroups ~= nil and allowGroups then
-            Spring.Echo("PointsToFormation: INFO - Groups are allowed - repeating formation to fit units")
+        if allowGroups == nil or not allowGroups then
+            Logger.warn("PointsToFormation", "More units [" .. #selectedUnits .. "] than formation points [" .. #formation .. "] - Try setting allowGroups=true")
+        elseif allowGroups ~= nil and allowGroups then
+            -- Spring.Echo("PointsToFormation: INFO - Groups are allowed - repeating formation to fit units")
             -- trim formation to number of units
             local iterator = math.huge
             for i = 1, (#selectedUnits - #formation) do

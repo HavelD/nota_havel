@@ -65,7 +65,7 @@ return function(peaksData)
     end
 
     if (Script.LuaUI('hills_show')) then
-        Spring.Echo("Sending data to Hills Widget")
+        -- Spring.Echo("Sending data to Hills Widget")
         Script.LuaUI.hills_show(
             unitID, -- key -- neccessary?
             {
